@@ -1,0 +1,7 @@
+apiVersion: k8mon.tpretz.com/v1
+kind: monitor
+metadata:
+  name: test-monitor
+  namespace: default
+spec:
+  trigger: "{host.cpu.utilization > 80}"
